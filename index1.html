@@ -1,0 +1,57 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style1.css">
+    <meta name="viewport" content="width =device-width, initial-scale=1">
+<title>Click me.</title>
+
+<script type="text/javascript">
+flag=1
+function f1()
+{
+    var Name = prompt("what should I call you?");
+    
+    if(Name == "" || Name == null) {
+    alert("please enter your name.");
+    } else {
+    alert("Hi " + Name + ",Abe want to say that you always remember you're special. I LOVE YOU! GOODLUCK!"); 
+    }
+}
+function f()
+{
+    if(flag==1)
+        {
+            Bn.style.top=400
+            Bn.style.left=300
+            flag=2
+        }
+    else if(flag==2)
+        {
+            Bn.style.top=400
+            Bn.style.left=50
+            flag=3
+        }
+    else if(flag==3)
+        {
+            Bn.style.top=370
+            Bn.style.left=166
+            flag=1
+        }
+}
+</script>
+
+</head>
+<body>
+    <section id="yes">
+        <div class="okay"></div>
+<h1> Hey! you look beautiful!</h1>
+<h2 style="color: crimson;"> &nbsp;&nbsp;don't you think?</h2>
+<img src="https://c.tenor.com/sZPWbZj_QI8AAAAi/kakaotalk-emoticon.gif" />
+<div id="By">
+<input type="button" value=" YES " onClick="f1()" />
+</div>
+<div ID="Bn">
+<input type="button" value=" NO " onMouseOver="f()" />
+</div>
+</section>
+</body>
+</html>
